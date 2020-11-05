@@ -1,0 +1,34 @@
+---
+title: "dsproject"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{dsproject}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE, eval=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+**Introduction**
+
+Here is an article using the `use`, `import`, and `make_project` packages
+
+**Descriptions**
+
+Use the `import` function to import a dataset.
+
+The `make_project` turns takes a project name and creates a package. The function creates files and subdirectories for the project. This function will also create a RStudio Project and use git.
+
+The `use` function takes a package and prompts the user if they want that package installed. If so the package will install.
+
+```{r setup,eval=FALSE}
+library(dsproject)
+import(mydata.spss)
+make_project(myproject)
+use(myproject)
+```

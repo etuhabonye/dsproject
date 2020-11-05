@@ -1,0 +1,20 @@
+Package: dsproject
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.1
+Authors@R: 
+    person(given = "Emma",
+           family = "Tuhabonye",
+           role = c("aut", "cre"),
+           email = "etuhabonye@wesleyan.edu",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This package imports datasets and creates packages.
+License: MIT + file LICENSE
+Bugreports: http://github.com/etuhabonye/dsproject/issues
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
